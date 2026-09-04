@@ -1,0 +1,13 @@
+# Build artifacts produced by compilation
+c/calculator
+cpp/calculator
+go/calculator
+rust/calculator
+fortran/calculator
+cobol/calculator
+pascal/calculator
+pascal/*.o
+ada/calculator
+ada/*.o
+ada/*.ali
+java/*.class
