@@ -8,6 +8,12 @@ a="$1"
 op="$2"
 b="$3"
 
+number_re='^-?[0-9]+(\.[0-9]+)?$|^-?\.[0-9]+$'
+if ! [[ "$a" =~ $number_re && "$b" =~ $number_re ]]; then
+    echo "Error: invalid number"
+    exit 1
+fi
+
 case "$op" in
     "+") expr_str="$a + $b" ;;
     "-") expr_str="$a - $b" ;;

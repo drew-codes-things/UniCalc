@@ -8,10 +8,16 @@ int main(int argc, char *argv[]) {
         return 1;
     }
 
-    double a = atof(argv[1]);
+    char *end_a, *end_b;
+    double a = strtod(argv[1], &end_a);
     const char *op = argv[2];
-    double b = atof(argv[3]);
+    double b = strtod(argv[3], &end_b);
     double result;
+
+    if (end_a == argv[1] || *end_a != '\0' || end_b == argv[3] || *end_b != '\0') {
+        printf("Error: invalid number\n");
+        return 1;
+    }
 
     if (strcmp(op, "+") == 0) {
         result = a + b;
