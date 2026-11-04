@@ -38,5 +38,5 @@ parse_num(Str) ->
                 {I, []} -> float(I);
                 _ -> error
             end;
-        {F, _Rest} -> F
+        {_F, _Rest} -> error
     end.

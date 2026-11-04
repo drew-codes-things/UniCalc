@@ -9,7 +9,7 @@ if (scalar(@ARGV) != 3) {
 
 my ($a, $op, $b) = @ARGV;
 
-unless ($a =~ /^-?\d+\.?\d*$/ && $b =~ /^-?\d+\.?\d*$/) {
+unless ($a =~ /^-?(\d+\.?\d*|\.\d+)$/ && $b =~ /^-?(\d+\.?\d*|\.\d+)$/) {
     print "Error: invalid number\n";
     exit 1;
 }

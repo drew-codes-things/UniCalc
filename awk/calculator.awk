@@ -3,7 +3,7 @@ BEGIN {
         print "Error: expected 3 arguments <a> <op> <b>"
         exit 1
     }
-    if (a !~ /^-?[0-9]+\.?[0-9]*$/ || b !~ /^-?[0-9]+\.?[0-9]*$/) {
+    if (a !~ /^-?([0-9]+\.?[0-9]*|\.[0-9]+)$/ || b !~ /^-?([0-9]+\.?[0-9]*|\.[0-9]+)$/) {
         print "Error: invalid number"
         exit 1
     }

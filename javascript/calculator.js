@@ -6,9 +6,9 @@ function main() {
     return 1;
   }
 
-  const a = parseFloat(args[0]);
+  const a = args[0].trim() === "" ? NaN : Number(args[0]);
   const op = args[1];
-  const b = parseFloat(args[2]);
+  const b = args[2].trim() === "" ? NaN : Number(args[2]);
 
   if (Number.isNaN(a) || Number.isNaN(b)) {
     console.log("Error: invalid number");

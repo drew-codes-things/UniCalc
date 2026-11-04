@@ -6,7 +6,7 @@ end
 
 a_str, op, b_str = ARGV
 
-unless a_str =~ /\A-?\d+\.?\d*\z/ && b_str =~ /\A-?\d+\.?\d*\z/
+unless a_str =~ /\A-?(\d+\.?\d*|\.\d+)\z/ && b_str =~ /\A-?(\d+\.?\d*|\.\d+)\z/
   puts "Error: invalid number"
   exit 1
 end

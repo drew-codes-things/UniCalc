@@ -70,6 +70,16 @@ All commands below are run from the project root and compute `5 + 3`.
 
 ---
 
+## Running the tests
+
+```bash
+./run-tests.sh
+```
+
+`run-tests.sh` runs the same 11 cases (arithmetic, decimals, negatives, division by zero, an unknown operator, a non-numeric argument and a missing argument) against every calculator whose toolchain is on `PATH`, and skips the rest. 27 languages x 11 cases is where the 297 in the badge comes from.
+
+---
+
 ## Languages (27)
 
 Python, JavaScript, C, C++, Java, Perl, Bash, Go, Rust, Ruby, PHP, Lua,
