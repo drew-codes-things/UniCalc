@@ -10,6 +10,8 @@
 
 </div>
 
+![The same calculator in six languages](screenshot.png)
+
 ---
 
 ## Overview
